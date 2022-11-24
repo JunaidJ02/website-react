@@ -18,10 +18,23 @@
   font-family: 'Raleway', sans-serif;
   width: 100vw;
 	height: 100vh;
-	overflow-y: visible;
+  overflow-y: visible;
 	overflow-x: hidden;
 	scroll-snap-type: y mandatory;
 	vertical-align: top;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: #111111;
+}
+
+@media screen and (prefers-color-scheme: light) {
+  .App {
+    background-color: #FDFDFD;
+  }
+}
+
+.App::-webkit-scrollbar {
+  display: none;
 }
 
 

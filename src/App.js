@@ -20,12 +20,6 @@ export default class App extends React.Component {
           <Routes>
             <Route
               path='/'
-              element={
-                <Navigate replace to={'home'} />
-              }
-            />
-            <Route
-              path="/home"
               element={<Home />}
             />
           </Routes>
