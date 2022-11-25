@@ -205,7 +205,7 @@ function Home() {
                                     <div id="NASA"></div>
                                 </div>
                                 <div className="sectionDescription">
-                                    <span>Doing some stuff</span>
+                                    <span>Expanded the functionality of the robotics planning software to allow for more complex commands to be sent to ISS. Developed an extension for the robotic planning software to track tip of the robotic arms in space. Built an automated script to automatically point all cameras on the outside of ISS to the tip of the robotic arm during motion. Saved flight operators countless hours by automating the movement of cameras during real time operations.</span>
                                 </div>
                                 <div className="rocketDiv">
                                     <div className="rocket">
@@ -232,51 +232,35 @@ function Home() {
                             </div>
                             <div className='meta'>
                                 <div className="positionName">
-                                    <svg className='metaLogo' viewBox="0 0 500 100"><defs><linearGradient gradientUnits="userSpaceOnUse" id="jsc_c_j" x1="124.38" x2="160.839" y1="99" y2="59.326"><stop offset=".427" stopColor="#0278F1"></stop><stop offset=".917" stopColor="#0180FA"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" id="jsc_c_k" x1="42" x2="-1.666" y1="4.936" y2="61.707"><stop offset=".427" stopColor="#0165E0"></stop><stop offset=".917" stopColor="#0180FA"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" id="jsc_c_l" x1="27.677" x2="132.943" y1="28.71" y2="71.118"><stop stopColor="#0064E0"></stop><stop offset=".656" stopColor="#0066E2"></stop><stop offset="1" stopColor="#0278F1"></stop></linearGradient></defs><path d="M185.508 3.01h18.704l31.803 57.313L267.818 3.01h18.297v94.175h-15.264v-72.18l-27.88 49.977h-14.319l-27.88-49.978v72.18h-15.264V3.01ZM336.281 98.87c-7.066 0-13.286-1.565-18.638-4.674-5.352-3.12-9.527-7.434-12.528-12.952-2.989-5.517-4.483-11.835-4.483-18.973 0-7.214 1.461-13.608 4.385-19.17 2.923-5.561 6.989-9.908 12.187-13.05 5.198-3.13 11.176-4.707 17.923-4.707 6.715 0 12.484 1.587 17.319 4.74 4.847 3.164 8.572 7.598 11.177 13.291 2.615 5.693 3.923 12.371 3.923 20.046v4.171h-51.793c.945 5.737 3.275 10.258 6.989 13.554 3.715 3.295 8.407 4.937 14.078 4.937 4.549 0 8.461-.667 11.747-2.014 3.286-1.347 6.374-3.383 9.253-6.12l8.099 9.886c-8.055 7.357-17.934 11.036-29.638 11.036Zm11.143-55.867c-3.198-3.252-7.385-4.872-12.56-4.872-5.045 0-9.264 1.653-12.66 4.97-3.407 3.318-5.55 7.784-6.451 13.39h37.133c-.451-5.737-2.275-10.237-5.462-13.488ZM386.513 39.467h-14.044V27.03h14.044V6.447h14.715V27.03h21.341v12.437h-21.341v31.552c0 5.244.901 8.988 2.703 11.233 1.803 2.244 4.88 3.36 9.253 3.36 1.935 0 3.572-.076 4.924-.23a97.992 97.992 0 0 0 4.461-.645v12.316c-1.67.493-3.549.898-5.637 1.205-2.099.317-4.286.47-6.583.47-15.89 0-23.836-8.649-23.836-25.957V39.467ZM500 97.185h-14.44v-9.82c-2.571 3.678-5.835 6.513-9.791 8.506-3.968 1.993-8.462 3-13.506 3-6.209 0-11.715-1.588-16.506-4.752-4.803-3.153-8.572-7.51-11.308-13.039-2.748-5.54-4.121-11.879-4.121-19.006 0-7.17 1.395-13.52 4.187-19.038 2.791-5.518 6.648-9.843 11.571-12.985 4.935-3.13 10.594-4.707 16.99-4.707 4.813 0 9.132.93 12.956 2.791a25.708 25.708 0 0 1 9.528 7.905v-9.01H500v70.155Zm-14.715-45.61c-1.571-3.985-4.066-7.138-7.461-9.448-3.396-2.31-7.33-3.46-11.781-3.46-6.308 0-11.319 2.102-15.055 6.317-3.737 4.215-5.605 9.92-5.605 17.09 0 7.215 1.802 12.94 5.396 17.156 3.604 4.215 8.484 6.317 14.66 6.317 4.538 0 8.593-1.16 12.154-3.492 3.549-2.332 6.121-5.475 7.692-9.427V51.575Z" fill="#1C2B33"></path><path d="M107.666 0C95.358 0 86.865 4.504 75.195 19.935 64.14 5.361 55.152 0 42.97 0 18.573 0 0 29.768 0 65.408 0 86.847 12.107 99 28.441 99c15.742 0 25.269-13.2 33.445-27.788l9.663-16.66a643.785 643.785 0 0 1 2.853-4.869 746.668 746.668 0 0 1 3.202 5.416l9.663 16.454C99.672 92.72 108.126 99 122.45 99c16.448 0 27.617-13.723 27.617-33.25 0-37.552-19.168-65.75-42.4-65.75ZM57.774 46.496l-9.8 16.25c-9.595 15.976-13.639 19.526-19.67 19.526-6.373 0-11.376-5.325-11.376-17.547 0-24.51 12.062-47.451 26.042-47.451 7.273 0 12.678 3.61 22.062 17.486a547.48 547.48 0 0 0-7.258 11.736Zm64.308 35.776c-6.648 0-11.034-4.233-20.012-19.39l-9.663-16.386c-2.79-4.737-5.402-9.04-7.88-12.945 9.73-14.24 15.591-17.984 23.002-17.984 14.118 0 26.204 20.96 26.204 49.158 0 11.403-4.729 17.547-11.651 17.547Z" fill="#0180FA"></path><path d="M145.631 36h-16.759c3.045 7.956 4.861 17.797 4.861 28.725 0 11.403-4.729 17.547-11.651 17.547H122v16.726l.449.002c16.448 0 27.617-13.723 27.617-33.25 0-10.85-1.6-20.917-4.435-29.75Z" fill="url(#jsc_c_j)"></path><path d="M42 .016C18.63.776.832 28.908.028 63h16.92C17.483 39.716 28.762 18.315 42 17.31V.017Z" fill="url(#jsc_c_k)"></path><path d="m75.195 19.935.007-.009c2.447 3.223 5.264 7.229 9.33 13.62l-.005.005c2.478 3.906 5.09 8.208 7.88 12.945l9.663 16.386c8.978 15.157 13.364 19.39 20.012 19.39.31 0 .617-.012.918-.037v16.76c-.183.003-.367.005-.551.005-14.323 0-22.777-6.281-35.182-27.447L77.604 55.1l-.625-1.065L77 54c-2.386-4.175-7.606-12.685-11.973-19.232l.005-.008-.62-.91C63.153 31.983 61.985 30.313 61 29l-.066.024c-7.006-9.172-11.818-11.75-17.964-11.75-.324 0-.648.012-.97.037V.016c.322-.01.646-.016.97-.016 12.182 0 21.17 5.36 32.225 19.935Z" fill="url(#jsc_c_l)"></path></svg>
+                                    <div className='metaLogo'>
+                                        <svg viewBox="0 0 500 100"><defs><linearGradient gradientUnits="userSpaceOnUse" id="jsc_c_j" x1="124.38" x2="160.839" y1="99" y2="59.326"><stop offset=".427" stopColor="#0278F1"></stop><stop offset=".917" stopColor="#0180FA"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" id="jsc_c_k" x1="42" x2="-1.666" y1="4.936" y2="61.707"><stop offset=".427" stopColor="#0165E0"></stop><stop offset=".917" stopColor="#0180FA"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" id="jsc_c_l" x1="27.677" x2="132.943" y1="28.71" y2="71.118"><stop stopColor="#0064E0"></stop><stop offset=".656" stopColor="#0066E2"></stop><stop offset="1" stopColor="#0278F1"></stop></linearGradient></defs><path d="M185.508 3.01h18.704l31.803 57.313L267.818 3.01h18.297v94.175h-15.264v-72.18l-27.88 49.977h-14.319l-27.88-49.978v72.18h-15.264V3.01ZM336.281 98.87c-7.066 0-13.286-1.565-18.638-4.674-5.352-3.12-9.527-7.434-12.528-12.952-2.989-5.517-4.483-11.835-4.483-18.973 0-7.214 1.461-13.608 4.385-19.17 2.923-5.561 6.989-9.908 12.187-13.05 5.198-3.13 11.176-4.707 17.923-4.707 6.715 0 12.484 1.587 17.319 4.74 4.847 3.164 8.572 7.598 11.177 13.291 2.615 5.693 3.923 12.371 3.923 20.046v4.171h-51.793c.945 5.737 3.275 10.258 6.989 13.554 3.715 3.295 8.407 4.937 14.078 4.937 4.549 0 8.461-.667 11.747-2.014 3.286-1.347 6.374-3.383 9.253-6.12l8.099 9.886c-8.055 7.357-17.934 11.036-29.638 11.036Zm11.143-55.867c-3.198-3.252-7.385-4.872-12.56-4.872-5.045 0-9.264 1.653-12.66 4.97-3.407 3.318-5.55 7.784-6.451 13.39h37.133c-.451-5.737-2.275-10.237-5.462-13.488ZM386.513 39.467h-14.044V27.03h14.044V6.447h14.715V27.03h21.341v12.437h-21.341v31.552c0 5.244.901 8.988 2.703 11.233 1.803 2.244 4.88 3.36 9.253 3.36 1.935 0 3.572-.076 4.924-.23a97.992 97.992 0 0 0 4.461-.645v12.316c-1.67.493-3.549.898-5.637 1.205-2.099.317-4.286.47-6.583.47-15.89 0-23.836-8.649-23.836-25.957V39.467ZM500 97.185h-14.44v-9.82c-2.571 3.678-5.835 6.513-9.791 8.506-3.968 1.993-8.462 3-13.506 3-6.209 0-11.715-1.588-16.506-4.752-4.803-3.153-8.572-7.51-11.308-13.039-2.748-5.54-4.121-11.879-4.121-19.006 0-7.17 1.395-13.52 4.187-19.038 2.791-5.518 6.648-9.843 11.571-12.985 4.935-3.13 10.594-4.707 16.99-4.707 4.813 0 9.132.93 12.956 2.791a25.708 25.708 0 0 1 9.528 7.905v-9.01H500v70.155Zm-14.715-45.61c-1.571-3.985-4.066-7.138-7.461-9.448-3.396-2.31-7.33-3.46-11.781-3.46-6.308 0-11.319 2.102-15.055 6.317-3.737 4.215-5.605 9.92-5.605 17.09 0 7.215 1.802 12.94 5.396 17.156 3.604 4.215 8.484 6.317 14.66 6.317 4.538 0 8.593-1.16 12.154-3.492 3.549-2.332 6.121-5.475 7.692-9.427V51.575Z" fill="#1C2B33"></path><path d="M107.666 0C95.358 0 86.865 4.504 75.195 19.935 64.14 5.361 55.152 0 42.97 0 18.573 0 0 29.768 0 65.408 0 86.847 12.107 99 28.441 99c15.742 0 25.269-13.2 33.445-27.788l9.663-16.66a643.785 643.785 0 0 1 2.853-4.869 746.668 746.668 0 0 1 3.202 5.416l9.663 16.454C99.672 92.72 108.126 99 122.45 99c16.448 0 27.617-13.723 27.617-33.25 0-37.552-19.168-65.75-42.4-65.75ZM57.774 46.496l-9.8 16.25c-9.595 15.976-13.639 19.526-19.67 19.526-6.373 0-11.376-5.325-11.376-17.547 0-24.51 12.062-47.451 26.042-47.451 7.273 0 12.678 3.61 22.062 17.486a547.48 547.48 0 0 0-7.258 11.736Zm64.308 35.776c-6.648 0-11.034-4.233-20.012-19.39l-9.663-16.386c-2.79-4.737-5.402-9.04-7.88-12.945 9.73-14.24 15.591-17.984 23.002-17.984 14.118 0 26.204 20.96 26.204 49.158 0 11.403-4.729 17.547-11.651 17.547Z" fill="#0180FA"></path><path d="M145.631 36h-16.759c3.045 7.956 4.861 17.797 4.861 28.725 0 11.403-4.729 17.547-11.651 17.547H122v16.726l.449.002c16.448 0 27.617-13.723 27.617-33.25 0-10.85-1.6-20.917-4.435-29.75Z" fill="url(#jsc_c_j)"></path><path d="M42 .016C18.63.776.832 28.908.028 63h16.92C17.483 39.716 28.762 18.315 42 17.31V.017Z" fill="url(#jsc_c_k)"></path><path d="m75.195 19.935.007-.009c2.447 3.223 5.264 7.229 9.33 13.62l-.005.005c2.478 3.906 5.09 8.208 7.88 12.945l9.663 16.386c8.978 15.157 13.364 19.39 20.012 19.39.31 0 .617-.012.918-.037v16.76c-.183.003-.367.005-.551.005-14.323 0-22.777-6.281-35.182-27.447L77.604 55.1l-.625-1.065L77 54c-2.386-4.175-7.606-12.685-11.973-19.232l.005-.008-.62-.91C63.153 31.983 61.985 30.313 61 29l-.066.024c-7.006-9.172-11.818-11.75-17.964-11.75-.324 0-.648.012-.97.037V.016c.322-.01.646-.016.97-.016 12.182 0 21.17 5.36 32.225 19.935Z" fill="url(#jsc_c_l)"></path></svg>
+                                    </div>
                                 </div>
                                 <div className="sectionDescription">
                                     <span>Built the new onboarding flow for the Facebook app consisting of profile picture upload, notification permissions, contact importing, quick friending, and interest picker. Increased new user day to day retention by 4.3% from showing posts related to interests collected during onboard. Wrote logging scripts to allow for a better understanding of user interactions during onboard. Created comprehensive interactive tests to spot issues before release</span>
                                 </div>
-                                {/* <div className='metaCards'>
-                                    <ul className="deck">
-                                        <li className="deck__item deck__item--facebook">
-                                            <a className="deck__link" href="#">
-                                                <span className="deck__icon fontawesome-facebook"></span>
-                                                <span className="deck__label">Horizon Worlds</span>
-                                            </a>
-                                        </li>
-                                        <li className="deck__item deck__item--github">
-                                            <a className="deck__link" href="#">
-                                                <span className="deck__icon fontawesome-github"></span>
-                                                <span className="deck__label">Meta Quest</span>
-                                            </a>
-                                        </li>
-                                        <li className="deck__item deck__item--twitter">
-                                            <a className="deck__link" href="#">
-                                                <span className="deck__icon fontawesome-twitter"></span>
-                                                <span className="deck__label">WhatsApp</span>
-                                            </a>
-                                        </li>
-                                        <li className="deck__item deck__item--linkedin">
-                                            <a className="deck__link" href="#">
-                                                <span className="deck__icon fontawesome-linkedin"></span>
-                                                <span className="deck__label">Messenger</span>
-                                            </a>
-                                        </li>
-                                        <li className="deck__item deck__item--pinterest">
-                                            <a className="deck__link" href="#">
-                                                <span className="deck__icon fontawesome-pinterest"></span>
-                                                <span className="deck__label">Facebook</span>
-                                            </a>
-                                        </li>
-                                        <li className="deck__item deck__item--googleplus">
-                                            <a className="deck__link" href="#">
-                                                <span className="deck__icon fontawesome-google-plus"></span>
-                                                <span className="deck__label">Instagram</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div> */}
+                                <div className='metaCards'>
+                                    <div class="container">
+                                        <div class="camera-top">
+                                            <div class="zoom"></div>
+                                            <div class="mode-changer"></div>
+                                            <div class="sides"></div>
+                                            <div class="range-finder"></div>
+                                            <div class="focus"></div>
+                                            <div class="red"></div>
+                                            <div class="view-finder"></div>
+                                            <div class="flash">
+                                                <div class="light"></div>
+                                            </div>
+                                        </div>
+                                        <div class="camera-mid">
+                                            <div class="sensor"></div>
+                                            <div class="lens"></div>
+                                        </div>
+                                        <div class="camera-bottom"></div>
+                                    </div>
+
+                                </div>
                             </div>
                             <div className='nasa1'>
                                 <div className="positionName">
@@ -285,204 +269,22 @@ function Home() {
                                 <div className="sectionDescription">
                                     <span>Developed a standalone Python and C++ application to analyze camera/lens properties using computer vision. Worked on the camera system for the Next Generation Space Suits to develop 5 different custom algorithms to detect and fix sensor defects caused by heavy proton radiation in space. Created a solution to fix distorted images to allow for a more thorough examination of space footage. Programmed an intuitive UI to allow any NASA employee to correct sensor defects and image distortion.</span>
                                 </div>
-                                {/* <div className='cupolaDiv'>
-                                    <div className="ctn">
-                                        <div>
-                                            <div>
-                                                <div className="tex"></div>
-                                                <div className="tex"></div>
-                                            </div>
+                                <div className='nasaSolarSystem'>
+                                    <div class="solar-system">
+                                        <div class="sun"></div>
+
+                                        <div class="planet mercury"></div>
+                                        <div class="planet venus"></div>
+                                        <div class="planet earth">
+                                            <div class="moon"></div>
                                         </div>
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="558.82"
-                                            height="590.8"
-                                            version="1.1"
-                                            viewBox="0 0 558.821 590.8"
-                                        >
-                                            <defs>
-                                                <clipPath clipPathUnits="userSpaceOnUse">
-                                                    <path
-                                                        style={{
-                                                            isolation: "auto",
-                                                            mixBlendMode: "normal",
-                                                            solidColor: "#000000",
-                                                        }}
-                                                        fill="#f0f"
-                                                        d="M53.058 106.33c-2.25 1.3-4.334 3.372-5.928 5.736l68.407 39.496c7.239 4.18 13.403 9.684 20.682 5.482l94.968-54.83c7.279-4.202 5.594-12.293 5.594-20.651V2.572c-2.845.198-5.68.966-7.932 2.265L53.06 106.327zM4.501 185.902c-1.251 2.563-2.004 5.403-2.004 8.002v202.99c0 2.599.754 5.44 2.005 8.003l68.409-39.495c7.238-4.179 15.086-6.765 15.086-15.17v-109.66c0-8.404-7.848-10.99-15.087-15.17l-68.409-39.5zm317.54-183.33v78.989c0 8.358-1.686 16.45 5.593 20.652l94.969 54.83c7.278 4.202 13.444-1.303 20.682-5.482l68.407-39.495c-1.594-2.365-3.676-4.438-5.927-5.737l-175.79-101.5c-2.25-1.3-5.086-2.068-7.931-2.265zm-104.02 192.06a118 118 0 00-40.796 41.772 118 118 0 0043.191 161.19 118 118 0 00161.19-43.192 118 118 0 00-43.19-161.19 118 118 0 00-120.4 1.419zm-95.305 240.27c-.634.354-1.27.732-1.91 1.121-1.71 1.038-3.452 2.167-5.261 3.212l-68.41 39.496c1.594 2.364 3.678 4.436 5.929 5.736l175.79 101.49c2.25 1.3 5.086 2.067 7.931 2.265v-78.99c0-8.358 1.684-16.449-5.594-20.65l-94.97-54.83c-4.776-2.759-9.073-1.337-13.509 1.148zm357.14-206.19c-.648.363-1.282.729-1.89 1.108-4.068 2.517-7.134 5.498-7.134 10.75v109.66c0 8.405 7.85 10.99 15.09 15.17l68.408 39.496c1.251-2.563 2.004-5.403 2.004-8.002v-202.99c0-2.599-.753-5.44-2.004-8.002l-68.407 39.495c-2.036 1.176-4.12 2.224-6.065 3.312zm-152.21 259.87c-7.279 4.202-5.594 12.293-5.594 20.651v78.991c2.845-.198 5.68-.966 7.932-2.266l175.79-101.49c2.25-1.3 4.334-3.371 5.928-5.736l-68.407-39.496c-7.239-4.18-13.403-9.684-20.681-5.481l-94.968 54.83z"
-                                                        color="#000"
-                                                    ></path>
-                                                </clipPath>
-                                            </defs>
-                                            <g strokeLinecap="round" strokeLinejoin="round" color="#000">
-                                                <path
-                                                    style={{
-                                                        isolation: "auto",
-                                                        mixBlendMode: "normal",
-                                                        solidColor: "#000000",
-                                                    }}
-                                                    stroke="#ccc"
-                                                    d="M47.131 112.07c-3.56 5.282-4.668 12.029.333 14.916l80.825 46.665c7.238 4.18 13.402 9.682 20.68 5.48l94.967-54.83c7.278-4.202 5.596-12.291 5.596-20.65l-.001-93.33c0-5.774-6.395-8.19-12.75-7.747v78.99c0 8.36 1.684 16.45-5.594 20.652l-94.968 54.83c-7.279 4.202-13.443-1.303-20.681-5.482z"
-                                                ></path>
-                                                <path
-                                                    style={{
-                                                        isolation: "auto",
-                                                        mixBlendMode: "normal",
-                                                        solidColor: "#000000",
-                                                    }}
-                                                    fill="none"
-                                                    stroke="#333"
-                                                    strokeDasharray="2, 4"
-                                                    strokeWidth="2"
-                                                    d="M243.16 6.198v86.406c0 8.359 1.684 16.45-5.594 20.651l-94.967 54.83c-7.279 4.202-13.443-1.302-20.682-5.481l-74.78-43.175"
-                                                ></path>
-                                                <path
-                                                    style={{
-                                                        isolation: "auto",
-                                                        mixBlendMode: "normal",
-                                                        solidColor: "#000000",
-                                                    }}
-                                                    stroke="#ccc"
-                                                    d="M322.04 2.568c-6.355-.442-12.751 1.972-12.751 7.746v93.33c-.001 8.359-1.685 16.448 5.594 20.65l94.967 54.83c7.278 4.202 13.444-1.3 20.682-5.48l80.83-46.67c5-2.886 3.894-9.633.334-14.915l-68.409 39.495c-7.238 4.18-13.403 9.684-20.68 5.482l-94.969-54.83c-7.278-4.202-5.594-12.293-5.593-20.651z"
-                                                ></path>
-                                                <path
-                                                    style={{
-                                                        isolation: "auto",
-                                                        mixBlendMode: "normal",
-                                                        solidColor: "#000000",
-                                                    }}
-                                                    fill="none"
-                                                    stroke="#333"
-                                                    strokeDasharray="2, 4"
-                                                    strokeWidth="2"
-                                                    d="M511.74 119.4l-74.83 43.203c-7.239 4.18-13.403 9.683-20.682 5.48l-94.967-54.828c-7.279-4.202-5.595-12.293-5.594-20.651l.002-86.348"
-                                                ></path>
-                                                <path
-                                                    style={{
-                                                        isolation: "auto",
-                                                        mixBlendMode: "normal",
-                                                        solidColor: "#000000",
-                                                    }}
-                                                    stroke="#ccc"
-                                                    d="M554.32 185.91c-2.794-5.725-8.083-10.057-13.084-7.17l-80.83 46.66c-7.239 4.18-15.086 6.765-15.086 15.17v109.66c0 8.405 7.847 10.993 15.086 15.172l80.826 46.664c5 2.887 10.29-1.444 13.084-7.168l-68.408-39.496c-7.239-4.18-15.088-6.765-15.088-15.17v-109.66c0-8.404 7.85-10.99 15.088-15.17z"
-                                                ></path>
-                                                <path
-                                                    style={{
-                                                        isolation: "auto",
-                                                        mixBlendMode: "normal",
-                                                        solidColor: "#000000",
-                                                    }}
-                                                    fill="none"
-                                                    stroke="#333"
-                                                    strokeDasharray="2, 4"
-                                                    strokeWidth="2"
-                                                    d="M547.99 408.6l-74.83-43.203c-7.239-4.18-15.087-6.766-15.087-15.171v-109.66c0-8.404 7.849-10.992 15.087-15.171l74.78-43.173"
-                                                ></path>
-                                                <path
-                                                    style={{
-                                                        isolation: "auto",
-                                                        mixBlendMode: "normal",
-                                                        solidColor: "#000000",
-                                                    }}
-                                                    stroke="#ccc"
-                                                    d="M4.501 404.89c2.794 5.725 8.083 10.057 13.084 7.17l80.83-46.66c7.239-4.18 15.086-6.765 15.086-15.17V240.57c0-8.405-7.847-10.993-15.086-15.172l-80.826-46.664c-5-2.887-10.29 1.444-13.084 7.168l68.408 39.496c7.239 4.18 15.088 6.765 15.088 15.17v109.66c0 8.404-7.85 10.99-15.088 15.17z"
-                                                ></path>
-                                                <path
-                                                    style={{
-                                                        isolation: "auto",
-                                                        mixBlendMode: "normal",
-                                                        solidColor: "#000000",
-                                                    }}
-                                                    fill="none"
-                                                    stroke="#333"
-                                                    strokeDasharray="2, 4"
-                                                    strokeWidth="2"
-                                                    d="M10.831 182.2l74.83 43.203c7.239 4.18 15.087 6.766 15.087 15.171v109.66c0 8.405-7.849 10.992-15.087 15.171l-74.78 43.173"
-                                                ></path>
-                                                <path
-                                                    style={{
-                                                        isolation: "auto",
-                                                        mixBlendMode: "normal",
-                                                        solidColor: "#000000",
-                                                    }}
-                                                    stroke="#ccc"
-                                                    d="M236.78 588.22c6.355.443 12.751-1.972 12.751-7.746v-93.33c.001-8.358 1.685-16.448-5.594-20.65l-94.967-54.83c-7.278-4.201-13.444 1.3-20.682 5.48l-80.825 46.665c-5 2.887-3.894 9.633-.334 14.915l68.409-39.495c7.238-4.18 13.403-9.684 20.68-5.482l94.969 54.83c7.278 4.203 5.594 12.293 5.593 20.651z"
-                                                ></path>
-                                                <path
-                                                    style={{
-                                                        isolation: "auto",
-                                                        mixBlendMode: "normal",
-                                                        solidColor: "#000000",
-                                                    }}
-                                                    fill="none"
-                                                    stroke="#333"
-                                                    strokeDasharray="2, 4"
-                                                    strokeWidth="2"
-                                                    d="M47.081 471.4l74.83-43.203c7.239-4.18 13.403-9.683 20.682-5.48l94.967 54.828c7.279 4.202 5.595 12.293 5.594 20.651l-.002 86.348"
-                                                ></path>
-                                                <path
-                                                    style={{
-                                                        isolation: "auto",
-                                                        mixBlendMode: "normal",
-                                                        solidColor: "#000000",
-                                                    }}
-                                                    stroke="#ccc"
-                                                    d="M511.69 478.73c3.56-5.282 4.668-12.029-.333-14.916l-80.83-46.66c-7.238-4.18-13.402-9.682-20.68-5.48l-94.967 54.83c-7.278 4.201-5.596 12.291-5.596 20.65l.001 93.33c0 5.774 6.395 8.19 12.75 7.747v-78.99c0-8.36-1.684-16.45 5.594-20.652l94.968-54.83c7.279-4.202 13.443 1.303 20.681 5.482z"
-                                                ></path>
-                                            </g>
-                                            <g
-                                                fill="none"
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                color="#000"
-                                            >
-                                                <path
-                                                    style={{
-                                                        isolation: "auto",
-                                                        mixBlendMode: "normal",
-                                                        solidColor: "#000000",
-                                                    }}
-                                                    stroke="#333"
-                                                    strokeDasharray="2, 4"
-                                                    strokeWidth="2"
-                                                    d="M315.66 584.6v-86.406c0-8.358-1.684-16.449 5.594-20.651l94.967-54.829c7.279-4.202 13.443 1.301 20.682 5.48l74.78 43.176"
-                                                ></path>
-                                                <g stroke="#1a1a1a" strokeWidth="5">
-                                                    <path
-                                                        style={{
-                                                            isolation: "auto",
-                                                            mixBlendMode: "normal",
-                                                            solidColor: "#000000",
-                                                        }}
-                                                        d="M329.97 4.838l175.79 101.49c7.279 4.202 12.833 16.472 5.595 20.651l-80.82 46.67c-7.24 4.18-13.404 9.683-20.683 5.481l-94.968-54.829c-7.278-4.202-5.594-12.293-5.594-20.65V10.321c0-8.358 13.403-9.683 20.682-5.48zM556.32 193.91V396.9c0 8.405-7.849 19.35-15.087 15.17l-80.825-46.664c-7.239-4.18-15.087-6.766-15.088-15.17v-109.66c0-8.405 7.849-10.992 15.088-15.171l80.825-46.662c7.239-4.179 15.087 6.766 15.087 15.171zM505.76 484.47L329.97 585.96c-7.279 4.202-20.682 2.878-20.682-5.48v-93.33c0-8.358-1.684-16.449 5.594-20.65l94.967-54.83c7.279-4.203 13.443 1.3 20.682 5.48l80.823 46.666c7.239 4.18 1.684 16.449-5.594 20.651zM2.501 396.89V193.9c0-8.405 7.849-19.35 15.087-15.171l80.825 46.664c7.239 4.18 15.087 6.766 15.087 15.171v109.66c0 8.404-7.849 10.992-15.087 15.171l-80.825 46.662c-7.239 4.18-15.087-6.766-15.088-15.171zM228.85 585.96L53.06 484.47c-7.278-4.202-12.833-16.472-5.594-20.651l80.825-46.664c7.238-4.18 13.403-9.683 20.682-5.48l94.967 54.828c7.278 4.203 5.594 12.293 5.594 20.651v93.328c0 8.359-13.403 9.683-20.682 5.481zM53.061 106.33L228.851 4.84c7.279-4.202 20.682-2.878 20.682 5.48v93.33c0 8.358 1.684 16.449-5.595 20.65l-94.967 54.83c-7.278 4.202-13.443-1.302-20.682-5.481l-80.822-46.666c-7.239-4.18-1.685-16.45 5.594-20.651z"
-                                                    ></path>
-                                                    <circle
-                                                        style={{
-                                                            isolation: "auto",
-                                                            mixBlendMode: "normal",
-                                                            solidColor: "#000000",
-                                                        }}
-                                                        cx="279.41"
-                                                        cy="295.4"
-                                                        r="118"
-                                                    ></circle>
-                                                </g>
-                                                <ellipse
-                                                    style={{
-                                                        isolation: "auto",
-                                                        mixBlendMode: "normal",
-                                                        solidColor: "#000000",
-                                                    }}
-                                                    cx="279.41"
-                                                    cy="295.4"
-                                                    stroke="#ccc"
-                                                    rx="115"
-                                                    ry="115.98"
-                                                ></ellipse>
-                                            </g>
-                                        </svg>
+                                        <div class="planet mars"></div>
+                                        <div class="planet jupiter"></div>
+                                        <div class="planet saturn"></div>
+                                        <div class="planet uranus"></div>
+                                        <div class="planet neptune"></div>
                                     </div>
-                                </div> */}
+                                </div>
                             </div>
                             <div className='southwest'>
                                 <div className='positionName'>
