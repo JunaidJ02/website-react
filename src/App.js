@@ -15,7 +15,7 @@ import Home from './layouts/home/home';
 export default class App extends React.Component {
   render() {
     return (
-      <div className="App">
+      <div id="app" className="App">
         <Router>
           <Routes>
             <Route

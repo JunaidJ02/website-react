@@ -100,8 +100,7 @@ html, body {
     height: 5vh;
     position: absolute;
     bottom: 20vh;
-    left: 70vw;
-    transform: translateX(-50%);
+    left: 60vw;
     transform: scale(0.4);
 }
 
@@ -118,10 +117,10 @@ html, body {
   width: 10vw !important;
   height: 5vh !important;
   position: absolute;
-  bottom: 15vh;
+  bottom: 10vh;
   left: 50vw;
   transform: translate(-100% -100%);
-  scale: 0.5;
+  scale: 0.3;
 }
 
 .solarBody {
@@ -324,13 +323,13 @@ html, body {
 
 
 .intro {
-    margin-left: 5vw;
-    margin-top: 37.5vh;
-    width: 50vw;
-    height: 25vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  margin-left: 5vw;
+  margin-top: 37.5vh;
+  width: 50vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 	scroll-snap-align: start;
 }
 
@@ -360,14 +359,14 @@ html, body {
 }
 
 .section {
-    min-height: 100vh;
-    height: 100vh;
-    max-height: 100vh;
+  min-height: 100vh;
+  height: 100vh;
+  max-height: 100vh;
 	width: 100vw;
 	overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 	scroll-snap-align: start;
 }
 
@@ -1017,15 +1016,8 @@ body {
   .southwestPlane *:before {
     box-sizing: border-box;
     transform-style: preserve-3d;
-    transition: background 0.25s;
   }
-  /* body {
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
-    background: var(--bg);
-    overflow: hidden;
-  } */
+
   :root {
     --dark: 0;
     --base-size: 20;
@@ -1313,9 +1305,8 @@ body {
     left: 50%;
     height: calc(var(--base-size) * 0.25vmin);
     width: calc(var(--base-size) * 0.25vmin);
-    background-image: url("https://assets.codepen.io/605876/avatar.png");
-    background-size: cover;
-    filter: saturate(0.65);
+    background-image: url("https://www.pinclipart.com/picdir/big/340-3401242_southwest-clip-art.png");
+    background-size:contain;
     transform: translate3d(-50%, -50%, 1px);
   }
   .cuboid--screen {
@@ -2303,4 +2294,57 @@ body {
       box-shadow: 0px 30px 50px -20px rgba(0,0,0,0.7);
    }
  }
+
+ .arrows {
+	width: 60px;
+	height: 72px;
+	position: relative;
+  top: calc(100vh - 30px);
+  left: calc(50vw - 36px);
+  scale: 0.5;
+}
+
+.arrows path {
+	stroke: #F2F2F2;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+.downArrow {
+  /* transform: scale(0.5); */
+}
   
+

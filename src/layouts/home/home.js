@@ -6,7 +6,6 @@ import Countdown from "react-countdown";
 
 function Home() {
     const [repeat, setRepeat] = useState(false);
-    const [repeat1, setRepeat1] = useState(false);
     useEffect(() => {
         function addClass(theId, theClass) {
             var element = document.getElementById(theId);
@@ -95,13 +94,48 @@ function Home() {
         setTimeout(() => { setRepeat(!repeat) }, 5000);
     }, [repeat]);
 
-    function scrollDelay(ms) {
-        return new Promise(res => setTimeout(res, ms));
-    }
+    useEffect(() => {
+        console.log(window.location.pathname)
+        console.log(document.referrer)
+        console.log(window.history.length)
+
+        console.log(navigator.appName)
+        console.log(navigator.product)
+        console.log(navigator.appVersion)
+        console.log(navigator.userAgent)
+        console.log(navigator.language)
+        console.log(navigator.onLine)
+        console.log(navigator.platform)
+        console.log(navigator.javaEnabled())
+        console.log(navigator.cookieEnabled)
+        console.log(document.cookie)
+        console.log(decodeURIComponent(document.cookie.split(";")))
+        console.log(localStorage)
+
+        console.log(window.screen.width)
+        console.log(window.screen.height)
+        console.log(document.width)
+        console.log(document.height)
+        console.log(window.innerWidth)
+        console.log(window.innerHeight)
+        console.log(window.screen.availWidth)
+        console.log(window.screen.availHeight)
+        console.log(window.screen.colorDepth)
+        console.log(window.screen.pixelDepth)
+        fetch("http://geolocation-db.com/json/").then(response => {
+            console.log(response.json())
+        })
+    }, [])
 
     return (
         <div>
             <header className='App-header'>
+                <div className='downArrow'>
+                    <svg class="arrows downArrow">
+                        <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                        <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                    </svg>
+                </div>
                 <div id='name' className='section'>
                     <div className='intro'>
                         <div className="pronunciation">
@@ -192,7 +226,23 @@ function Home() {
                             <span className='underline'>Education</span>
                         </div>
                         <div className="name">
-                            <span>Purdue University 🚂</span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 237.133 75.811"
+                                width="237.133"
+                                height="75.811"
+                            >
+                                <path
+                                    fill="#f2f2f2"
+                                    d="M206.66 426.1v-2.725h1.053c3.157 0 4.024-1.3 4.024-4.705v-23.093c0-3.406-.867-4.707-4.024-4.707h-1.053v-2.723c2.848.123 5.634.122 8.482.122 2.847 0 5.697 0 8.545-.122v2.723h-.99c-3.22 0-4.088 1.24-4.088 4.707v9.039h5.078c9.224 0 13.683 3.219 13.683 10.711-.001 7.429-4.83 10.773-14.8 10.773h-15.91zm11.949-3.59h3.776c5.448 0 8.297-2.477 8.297-7.06 0-5.077-2.724-7.49-8.357-7.49h-3.716v14.549zm21.013-4v-2.18h.792c2.18 0 2.725-1.188 2.725-3.764v-13.919c0-7.38 4.11-11.193 11.985-11.193 8.372 0 11.74 3.665 11.74 11.888v13.224c0 2.626.594 3.764 2.723 3.764h.892v2.18c-1.933-.05-3.914-.1-5.895-.1-2.03 0-4.06.05-6.19.1v-2.18h.793c2.873 0 3.417-.991 3.417-3.914v-13.372c0-5.548-1.783-8.124-6.984-8.124-5.3 0-7.033 2.577-7.033 8.224v13.421c0 2.823.496 3.764 3.22 3.764h.841v2.18c-2.13-.05-4.26-.098-6.44-.098-2.179 0-4.359.048-6.587.098zm33.63 0v-2.18h.795c2.525 0 3.267-1.04 3.267-3.764v-18.477c0-2.773-.692-3.764-3.267-3.764h-.794v-2.178c2.279.098 4.508.098 6.786.098 2.279 0 4.557 0 6.836-.098v2.178h-.841c-2.527 0-3.22.991-3.22 3.764v7.828h2.773c4.111 0 5.051-1.19 6.19-4.458.545-1.636.843-4.955 2.477-9.313h8.174v2.178h-.495c-2.526 0-3.37 1.488-4.21 4.905-1.19 4.756-1.488 7.48-5.301 8.123 3.565.942 5.548 3.566 5.548 7.083 0 5.746-3.864 8.074-11.987 8.074h-12.73zm30.909 0v-2.18h.792c2.527 0 3.267-1.04 3.267-3.764v-18.477c0-2.723-.74-3.764-3.267-3.764h-.792v-2.178h14.511c11.245 0 16.744 5.051 16.744 15.552 0 10.054-5.745 14.81-17.534 14.81h-13.72zm32.453 0v-2.18h.795c2.18 0 2.723-1.188 2.723-3.764v-13.919c0-7.38 4.11-11.193 11.988-11.193 8.37 0 11.737 3.665 11.737 11.888v13.224c0 2.626.595 3.764 2.727 3.764h.89v2.18a229.41 229.41 0 00-5.893-.1c-2.033 0-4.063.05-6.194.1v-2.18h.795c2.871 0 3.417-.991 3.417-3.914v-13.372c0-5.548-1.785-8.124-6.984-8.124-5.302 0-7.034 2.577-7.034 8.224v13.421c0 2.823.495 3.764 3.218 3.764h.842v2.18c-2.129-.05-4.26-.098-6.439-.098-2.18 0-4.36.048-6.589.098zm33.584-.15v-2.03h.842c2.577 0 3.218-1.04 3.218-3.764v-18.477c0-2.723-.593-3.764-3.218-3.764H370v-2.178h24.716v9.062h-2.478c-.048-5.448-.843-6.042-5.497-6.042h-6.983v11.295h2.427c3.616 0 4.504-.349 4.556-4.063h2.228v10.799h-2.28c0-3.813-.839-4.063-4.603-4.063h-2.328v10.253h7.18c3.962 0 5.053-.297 5.053-4.16v-.793h2.525v7.925h-24.318zm-56.477-2.723h3.464c8.372 0 12.334-3.666 12.334-11.888 0-8.67-3.863-12.68-12.083-12.68h-3.716v24.568zm-30.908-.05h3.169c4.656 0 6.737-1.685 6.737-5.696 0-3.863-2.427-5.349-7.43-5.349h-2.476v11.046z"
+                                    transform="matrix(1.25 0 0 -1.25 -258.32 534.63) translate(.745 .745)"
+                                ></path>
+                                <path
+                                    fill="#c28e0e"
+                                    d="M206.905 384.083V382.3H394.77v1.783H206.905zm126.544-6.658c-2.543 0-3.934-1.12-3.934-2.9 0-1.293.777-2.019 2.347-2.699l1.89-.81c.794-.34 1.133-.694 1.133-1.391 0-.971-.66-1.506-1.875-1.506-1.506 0-2.281.649-2.281 1.926 0 .064.017.146.017.228h-1.184v-2.798a16.133 16.133 0 013.562-.424c2.62 0 4.027 1.086 4.027 2.961 0 1.2-.697 2.056-2.105 2.622l-2.053.824c-.857.34-1.245.73-1.245 1.426 0 .857.727 1.455 1.893 1.455 1.342 0 1.958-.55 1.958-1.778 0-.097 0-.213-.018-.327h1.246v2.736c-1.211.292-2.344.455-3.378.455zm-125.456-.228v-.858h.194c.647 0 .792-.42.792-1.261v-4.581c0-2.295 1.311-3.446 3.982-3.446 2.847 0 3.96 1.199 3.96 3.852v4.175c0 .857.23 1.26.813 1.26h.24v.859a75.532 75.532 0 00-1.973-.031c-.663 0-1.325.014-2.022.03v-.857h.194c.825 0 1.036-.371 1.036-1.261v-4.322c0-1.57-.616-2.312-2.088-2.312-1.521 0-2.021.727-2.021 2.28v4.354c0 .938.163 1.261 1.051 1.261h.194v.858a89.972 89.972 0 00-2.152-.031c-.711 0-1.457.014-2.2.03zm21.308 0v-.858h.194c.825 0 1.052-.371 1.052-1.261v-5.664c0-.89-.227-1.277-1.052-1.277h-.194v-.858c.711.032 1.408.032 2.103.032.696 0 1.391 0 2.088-.032v.858h-.195c-.845 0-1.04.387-1.04 1.277l-.033 5.953 3.803-8.087h2.752v7.798c0 .89.208 1.261 1.034 1.261h.194v.858a89.633 89.633 0 00-2.119-.031c-.697 0-1.375.014-2.07.031v-.858h.193c.842 0 1.035-.37 1.035-1.26l.048-6.004-3.801 8.122h-3.996zm22.213 0v-.858h.194c.826 0 1.036-.371 1.036-1.261v-5.664c0-.89-.21-1.277-1.036-1.277h-.194v-.858c.777.032 1.554.032 2.33.032.76 0 1.538 0 2.314-.032v.858h-.21c-.825 0-1.035.388-1.035 1.277v5.664c0 .89.21 1.26 1.035 1.26h.21v.859c-.776-.017-1.554-.032-2.314-.032-.776 0-1.553.015-2.33.032zm15.775 0v-.858c.55-.05.777-.388 1.035-1.1l3.01-8.122h2.344l2.913 8.187c.21.615.454.921 1.036 1.035v.858a64.911 64.911 0 00-1.877-.032c-.68 0-1.392.015-2.168.032v-.858c.793 0 1.167-.16 1.167-.581 0-.114-.017-.26-.066-.422l-2.091-6.292-2.184 6.323c-.063.18-.098.325-.098.44 0 .451.34.498 1.166.532v.858c-.89-.017-1.7-.031-2.395-.031-.696 0-1.294.014-1.796.03zm41.29 0v-.858h.196c.824 0 1.033-.371 1.033-1.261v-5.664c0-.89-.21-1.277-1.033-1.277h-.195v-.858c.777.032 1.555.032 2.33.032.761 0 1.538 0 2.315-.032v.858h-.21c-.826 0-1.035.388-1.035 1.277v2.25h.775c.888 0 1.391-.26 1.617-.908.308-.857.358-2.102.955-3.477h2.978v.858h-.082c-.452 0-.793.13-1.037.42-.29.339-.403 1.067-.663 2.07-.274 1.02-.5 1.49-1.423 1.62 1.132.273 1.748 1.066 1.748 2.278 0 1.96-1.328 2.672-4.159 2.672h-4.11zm40.254 0v-.858h.196c.824 0 1.035-.371 1.035-1.261v-5.664c0-.89-.211-1.277-1.035-1.277h-.196v-.858c.778.032 1.555.032 2.33.032.761 0 1.537 0 2.315-.032v.858h-.211c-.827 0-1.036.388-1.036 1.277v5.664c0 .89.21 1.26 1.036 1.26h.21v.859c-.777-.017-1.553-.032-2.313-.032-.776 0-1.553.015-2.331.032zm16.067 0v-2.994h1.018c-.016.162-.015.291-.015.42 0 1.085.37 1.375 1.455 1.375h.873v-6.584c0-.89-.208-1.277-1.034-1.277h-.341v-.858c.826.032 1.652.032 2.475.032.81 0 1.636 0 2.461-.032v.858h-.34c-.827 0-1.037.388-1.037 1.277v6.584h.713c1.196 0 1.553-.257 1.553-1.534v-.261h1.067v2.994c-1.731 0-2.767-.032-3.104-.032h-2.735c-.324 0-1.328.032-3.01.032zm19.853 0v-.858c.66-.034.986-.403 1.373-1.067l2.264-3.933V369.3c0-.856-.177-1.164-1.098-1.164h-.227v-.858c.793.032 1.583.032 2.36.032.794 0 1.57 0 2.33-.032v.858h-.226c-.938 0-1.1.308-1.1 1.164v2.008l2.413 3.949c.434.71.74 1.08 1.259 1.08h.066v.859a72.847 72.847 0 00-1.927-.032c-.661 0-1.326.015-2.022.032v-.858c.55 0 .794-.147.794-.519 0-.16-.066-.389-.18-.614l-1.26-2.477-1.263 2.558c-.115.226-.194.42-.194.583 0 .323.228.469.744.469h.083v.858a95.236 95.236 0 00-2.154-.032c-.694 0-1.374.015-2.035.032zm-95.992-.032v-.826h.193c.825 0 1.036-.371 1.036-1.261v-5.664c0-.856-.162-1.277-1.036-1.277h-.193v-.858h8.121v3.105h-.908c-.031-1.73-.387-1.94-2.004-1.94h-1.813v3.43h.631c1.003 0 1.247-.195 1.296-1.262h.873v3.59h-.873c-.018-1.1-.293-1.293-1.361-1.293h-.566V376h1.99c1.196 0 1.73-.193 1.73-1.132v-.44h.922v2.738h-8.039zm23.22-1.167h.824c1.359 0 1.972-.451 1.972-1.681 0-1.181-.647-1.602-2.054-1.602h-.743v3.283z"
+                                    transform="matrix(1.25 0 0 -1.25 -258.32 534.63) translate(.745 .745)"
+                                ></path>
+                            </svg>
                         </div>
                         <div className="sectionDescription">
                             <span>Currently a junior </span><span className='countdown'>(T- <Countdown date={'2024-05-10T13:00:00'} />)</span><span> at Purdue University. Majoring in Computer Science with concentrations in Software Engineering, Machine Intelligence, and Security. Minoring in Mathematics and Innovation & Leadership Studies along with a certificate in Entrepreneurship. </span>
@@ -213,7 +263,7 @@ function Home() {
                                     <span>CX2 - Robotics Operation</span>
                                 </div>
                                 <div className='sectionDate'>
-                                    <span>August - December 2023</span>
+                                    <span>August - December 2022</span>
                                 </div>
                                 <div className="sectionDescription">
                                     <span>Expanded the functionality of the robotics planning software to allow for more complex commands to be sent to ISS. Developed an extension for the robotic planning software to track tip of the robotic arms in space. Built an automated script to automatically point all cameras on the outside of ISS to the tip of the robotic arm during motion. Saved flight operators countless hours by automating the movement of cameras during real time operations.</span>
@@ -251,7 +301,7 @@ function Home() {
                                     <span>Growth - New People Relevance</span>
                                 </div>
                                 <div className='sectionDate'>
-                                    <span>May - August 2023</span>
+                                    <span>May - August 2022</span>
                                 </div>
                                 <div className="sectionDescription">
                                     <span>Built the new onboarding flow for the Facebook app consisting of profile picture upload, notification permissions, contact importing, quick friending, and interest picker. Increased new user day to day retention by 4.3% from showing posts related to interests collected during onboard. Wrote logging scripts to allow for a better understanding of user interactions during onboard. Created comprehensive interactive tests to spot issues before release</span>
@@ -287,7 +337,7 @@ function Home() {
                                     <span>EV3 - Human Interface</span>
                                 </div>
                                 <div className='sectionDate'>
-                                    <span>August - December 2022</span>
+                                    <span>August - December 2021</span>
                                 </div>
                                 <div className="sectionDescription">
                                     <span>Developed a standalone Python and C++ application to analyze camera/lens properties using computer vision. Worked on the camera system for the Next Generation Space Suits to develop 5 different custom algorithms to detect and fix sensor defects caused by heavy proton radiation in space. Created a solution to fix distorted images to allow for a more thorough examination of space footage. Programmed an intuitive UI to allow any NASA employee to correct sensor defects and image distortion.</span>
@@ -392,7 +442,7 @@ function Home() {
                                     <span>Enterprise Mobile</span>
                                 </div>
                                 <div className='sectionDate'>
-                                    <span>June - August 2022</span>
+                                    <span>June - August 2021</span>
                                 </div>
                                 <div className="sectionDescription">
                                     <span>Created an inventory tracking application for all devices used by the on-ground airport teams. Allowed managers to ping and sync devices themselves, saving them from submitting tickets and waiting 15-20 minutes per device. Saved thousands of dollars a year in lost inventory by allowing the ability to track the devices. Worked with 5 other interns in creating a separate dashboard giving any employee access to basic server/network metrics</span>
