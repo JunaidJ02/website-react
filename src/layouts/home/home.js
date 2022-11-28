@@ -347,14 +347,14 @@ function Home() {
                                         <div class="sun"></div>
 
                                         <div class="planet mercury"></div>
-                                        <div class="planet venus"></div>
+                                        <div class="planet-backwards venus"></div>
                                         <div class="planet earth">
                                             <div class="moon"></div>
                                         </div>
                                         <div class="planet mars"></div>
                                         <div class="planet jupiter"></div>
                                         <div class="planet saturn"></div>
-                                        <div class="planet uranus"></div>
+                                        <div class="planet-backwards uranus"></div>
                                         <div class="planet neptune"></div>
                                     </div>
                                 </div>

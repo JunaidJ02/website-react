@@ -11,6 +11,7 @@ import {
 } from 'react-router-dom'
 
 import Home from './layouts/home/home';
+import UpdateSpotify from './layouts/updateSpotify/updateSpotify';
 
 export default class App extends React.Component {
   render() {
@@ -21,6 +22,10 @@ export default class App extends React.Component {
             <Route
               path='/'
               element={<Home />}
+            />
+            <Route
+              path='/updateSpotify'
+              element={<UpdateSpotify />}
             />
           </Routes>
         </Router>

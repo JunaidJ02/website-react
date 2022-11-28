@@ -117,10 +117,10 @@ html, body {
   width: 10vw !important;
   height: 5vh !important;
   position: absolute;
-  bottom: 10vh;
-  left: 50vw;
+  bottom: 15vh;
+  left: 55vw;
   transform: translate(-100% -100%);
-  scale: 0.3;
+  scale: 0.25;
 }
 
 .solarBody {
@@ -1798,6 +1798,15 @@ body {
       transform: translate(-50%, -50%) rotate(359deg);
     }
   }
+
+  @keyframes orbit-backwards {
+    from {
+      transform: translate(-50%, -50%) rotate(359deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }
   
   @keyframes orbit-moon {
     from {
@@ -1832,6 +1841,17 @@ body {
     cursor: cell;
     animation: orbit var(--time) infinite linear;
   }
+
+  .planet-backwards {
+    display: inline-grid;
+    width: var(--orbit);
+    height: var(--orbit);
+    grid-template-areas: "orbit";
+    align-items: center;
+    justify-content: center;
+    cursor: cell;
+    animation: orbit-backwards var(--time) infinite linear;
+  }
   
   /*orbit*/
   .planet::before {
@@ -1852,6 +1872,36 @@ body {
   
   /*planet*/
   .planet::after {
+    content: "";
+    display: block;
+    grid-area: orbit;
+    height: var(--diameter);
+    width: var(--diameter);
+    border-radius: 50%;
+    background-color: var(--color);
+    border: 0;
+    transform: translateX(-50%);
+  }
+
+  /*orbit*/
+  .planet-backwards::before {
+    content: "";
+    display: block;
+    grid-area: orbit;
+    width: var(--orbit);
+    height: var(--orbit);
+    border-radius: 50%;
+    border: 0;
+    background: radial-gradient(
+      circle,
+      transparent 0,
+      transparent 70%,
+      #2e2e2e 70%
+    );
+  }
+  
+  /*planet*/
+  .planet-backwards::after {
     content: "";
     display: block;
     grid-area: orbit;
@@ -1903,56 +1953,56 @@ body {
   .mercury {
     --diameter: 0.25rem;
     --orbit: 3.25rem;
-    --time: 1.753424658s;
+    --time: 0.88s;
     --color: #e5e5e5;
   }
   
   .venus {
     --diameter: 1rem;
     --orbit: 5.75rem;
-    --time: 4.483188045s;
+    --time: 2.25s;
     --color: #eecb8b;
   }
   
   .earth {
     --diameter: 1rem;
     --orbit: 8.75rem;
-    --time: 7.272727273s;
+    --time: 3.65s;
     --color: #6b93d6;
   }
   
   .mars {
     --diameter: 0.75rem;
     --orbit: 11.5rem;
-    --time: 13.6886675s;
+    --time: 6.87s;
     --color: #c1440e;
   }
   
   .jupiter {
     --diameter: 2.25rem;
     --orbit: 18.5rem;
-    --time: 87.27272727s;
+    --time: 43.33s;
     --color: #c99039;
   }
   
   .saturn {
     --diameter: 2rem;
     --orbit: 24.5rem;
-    --time: 210.9090909s;
+    --time: 107.59s;
     --color: #cecece;
   }
   
   .uranus {
     --diameter: 1.75rem;
     --orbit: 30rem;
-    --time: 610.9090909s;
+    --time: 306.87s;
     --color: #4fd0e7;
   }
   
   .neptune {
     --diameter: 1.7rem;
     --orbit: 35rem;
-    --time: 1200s;
+    --time: 601.90s;
     --color: #4b70dd;
   }
 
